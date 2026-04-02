@@ -10,7 +10,7 @@ export default function App() {
     <div style={{ fontFamily: "system-ui, sans-serif", padding: 24 }}>
       <h1 style={{ fontSize: 20 }}>Merce Cunningham Dance Company</h1>
       <h2 style={{ fontSize: 15, fontWeight: 400, color: "#666" }}>
-        Dancer Appearances — Part to Whole Visualization
+        Dancer Appearances — Number and Percentage of Total Performances
       </h2>
       <StackedBar data={data} width={960} height={300} />
       <p style={{ marginTop: 12, fontSize: 13, color: "#444" }}>

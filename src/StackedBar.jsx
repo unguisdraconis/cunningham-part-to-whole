@@ -178,5 +178,12 @@ export default function StackedBar({ data, width = 900, height = 220 }) {
       .attr("font-size", 10);
   }, [data, width, height]);
 
-  return <svg ref={svgRef} />;
+  return (
+    <svg
+      ref={svgRef}
+      viewBox={`0 0 ${width} ${height}`}
+      preserveAspectRatio="xMidYMid meet"
+      style={{ width: "100%", height: "auto" }}
+    />
+  );
 }

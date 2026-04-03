@@ -12,7 +12,9 @@ export default function App() {
       <h2 style={{ fontSize: 15, fontWeight: 400, color: "#666" }}>
         Dancer Appearances — Number and Percentage of Total Performances
       </h2>
-      <StackedBar data={data} width={960} height={300} />
+      <div className="chart-wrapper">
+        <StackedBar data={data} width={960} height={300} />
+      </div>
       <p style={{ marginTop: 12, fontSize: 13, color: "#444" }}>
         Bardiot, C. (2020). Merce Cunningham (Version 1) [Data set]. Zenodo.
         https://doi.org/10.5281/zenodo.3774548

@@ -133,17 +133,7 @@ export default function StackedBar({ data, width = 900, height = 220 }) {
       .attr("font-size", 11)
       .attr("fill", "#fff")
       .attr("pointer-events", "none")
-      .text((d) => {
-        const segmentW = x(d.count);
-        if (segmentW < 50) return "";
-        if (segmentW < 120) {
-          const firstParts = d.name.split(" ").slice(0, 2).join(" ");
-          return firstParts.length < d.name.length
-            ? `${firstParts}...`
-            : d.name;
-        }
-        return d.name;
-      });
+      .text(() => "");
 
     // Legend below the bar
     const legendY = barHeight + 20;
